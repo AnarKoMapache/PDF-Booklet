@@ -32,13 +32,6 @@ public class MainFrame extends JFrame {
             e.printStackTrace();
         }
         
-        ImageIcon imgIcon = new ImageIcon(getClass().getResource("/icon.png"));
-        if (imgIcon.getImage() != null) {
-            setIconImage(imgIcon.getImage());
-        } else {
-            System.err.println("No se pudo cargar el ícono de la aplicación.");
-        }
-
         setTitle("BookletCreator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
